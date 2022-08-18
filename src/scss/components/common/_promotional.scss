@@ -1,0 +1,21 @@
+.promotional {
+  background-color: var(--clr-default-500);
+
+  &__text {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    p {
+      font-size: fluid-font(2rem, 1.6rem);
+      line-height: 140%;
+      letter-spacing: 0.2rem;
+      text-align: center;
+      text-transform: uppercase;
+      color: var(--clr-default-100);
+
+      @media (max-width: em(375)) {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 14rem;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__sidebar-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 10rem;
+
+    @media (max-width: em(1560)) {
+      min-width: 7rem;
+    }
+
+
+    @media (max-width: em(767)) {
+      min-width: initial;
+    }
+  }
+
+  @media (max-width: em(1560)) {
+    min-height: 10rem;
+  }
+
+  @media (max-width: em(1240)) {
+    min-height: 7rem;
+  }
+
+  @media (max-width: em(575)) {
+    min-height: 6rem;
+  }
+}

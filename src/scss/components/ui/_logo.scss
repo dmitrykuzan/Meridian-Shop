@@ -1,0 +1,17 @@
+.logo {
+  margin-right: 2rem;
+  margin-left: 2rem;
+  max-width: 38rem;
+
+  @media (max-width: em(1560)) {
+    max-width: 32rem;
+  }
+
+  @media (max-width: em(1370)) {
+    max-width: 21rem;
+  }
+
+  @media (max-width: em(767)) {
+    max-width: 15rem;
+  }
+}

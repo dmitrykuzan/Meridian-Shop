@@ -1,0 +1,55 @@
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+}
+
+.main__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  width: max-content;
+  min-width: 44rem;
+  min-height: 10rem;
+  font-family: 'Outfit';
+  font-weight: 300;
+  font-size: fluid-font(2.5rem, 1.8rem);
+  line-height: 135%;
+  letter-spacing: 0.265em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--clr-default-100);
+  background-color: var(--clr-default-550);
+  transition: background-color var(--transition);
+
+  @media (max-width: em(1560)) {
+    min-width: 35rem;
+    min-height: 8rem;
+    letter-spacing: 0.165em;
+  }
+
+  @media (max-width: em(1200)) {
+    min-width: 25rem !important;
+    min-height: 6rem;
+    letter-spacing: 0.085em !important;
+  }
+
+  @media (max-width: em(767)) {
+    min-width: 20rem;
+    min-height: 6rem;
+    letter-spacing: 0.065em;
+  }
+
+  &:hover {
+    background-color: #795340;
+    transition: background-color var(--transition);
+  }
+}
+

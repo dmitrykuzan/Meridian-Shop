@@ -1,0 +1,66 @@
+.hero {
+  background-image: -webkit-image-set(
+    url(../img/hero/hero-bg@2x.jpg) 2x,
+    url(../img/hero/hero-bg@1x.jpg) 1x
+  );
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__wrapper {
+    padding-top: 21rem;
+    padding-bottom: 32rem;
+
+    @media (max-width: em(1200)) {
+      padding-top: 15rem;
+      padding-bottom: 15rem;
+    }
+
+    @media (max-width: em(767)) {
+      padding-top: 10rem;
+      padding-bottom: 10rem;
+    }
+
+    @media (max-width: em(575)) {
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+    }
+  }
+
+  &__content {
+    max-width: 103rem;
+
+    @media (max-width: em(1200)) {
+      max-width: initial;
+    }
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+    font-weight: 500;
+    font-size: fluid-font(7.5rem, 2.4rem);
+    text-transform: uppercase;
+    color: var(--clr-default-100);
+  }
+
+  &__text {
+    max-width: 82rem;
+    p {
+      margin-bottom: 5.5rem;
+      font-size: fluid-font(2.5rem, 1.6rem);
+      line-height: 168%;
+      color: var(--clr-default-100);
+
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+
+    @media (max-width: em(1200)) {
+      max-width: initial;
+    }
+  }
+
+  &__button {
+  }
+}

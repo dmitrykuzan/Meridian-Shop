@@ -1,0 +1,54 @@
+.aside {
+  margin-right: 2rem;
+
+  @media (max-width: em(1240)) {
+    margin-right: initial;
+  }
+
+  &__list {
+    display: flex;
+
+    @media (max-width: em(1240)) {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+
+    @media (max-width: em(1240)) {
+      text-align: center;
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-right: 4rem;
+
+      @media (max-width: em(1560)) {
+        margin-right: 2rem;
+      }
+
+      @media (max-width: em(1240)) {
+        margin-right: initial;
+      }
+    }
+
+    a {
+      font-size: fluid-font(2rem, 1.6rem);
+      line-height: 165%;
+      color: var(--clr-text-600);
+      transition: color var(--transition);
+
+      @media (max-width: em(1240)) {
+        font-weight: 600;
+        font-size: 2rem;
+      }
+    }
+
+    &:hover a {
+      color: var(--clr-default-550);
+      transition: color var(--transition);
+    }
+  }
+}

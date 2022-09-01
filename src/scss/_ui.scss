@@ -9,6 +9,22 @@
   clip: rect(0 0 0 0);
 }
 
+.section {
+  padding-top: 10rem;
+
+  @media (max-width: em(1200)) {
+    padding-top: 8rem;
+  }
+
+  @media (max-width: em(992)) {
+    padding-top: 6rem;
+  }
+
+  @media (max-width: em(575)) {
+    padding-top: 4rem;
+  }
+}
+
 .main__btn {
   display: flex;
   align-items: center;

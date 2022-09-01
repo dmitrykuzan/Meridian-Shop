@@ -38,9 +38,20 @@
   &__title {
     margin-bottom: 2rem;
     font-weight: 500;
-    font-size: fluid-font(7.5rem, 2.4rem);
+    font-size: fluid-font(7.5rem, 4rem);
+    line-height: 130%;
     text-transform: uppercase;
     color: var(--clr-default-100);
+
+    @media (max-width: em(575)) {
+      margin-bottom: 4rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    @media (max-width: em(427)) {
+      font-size: 3.2rem;
+    }
   }
 
   &__text {
@@ -59,8 +70,21 @@
     @media (max-width: em(1200)) {
       max-width: initial;
     }
+
+    @media (max-width: em(575)) {
+      display: none;
+    }
   }
 
   &__button {
+    @media (max-width: em(575)) {
+      margin-right: auto;
+      margin-left: auto;
+      min-width: 31rem !important;
+    }
+
+    @media (max-width: em(427)) {
+      min-width: 100% !important;
+    }
   }
 }

@@ -153,6 +153,11 @@ main {
   max-width: var(--container-width);
 }
 
+// Libs
+@import "./libs/swiper";
+
+// Libs
+
 // Components - UI
 @import "./ui";
 
@@ -179,6 +184,9 @@ main {
 @import "./components/indexPage/hero";
 @import "./components/indexPage/collection";
 @import "./components/indexPage/benefits";
+@import "./components/indexPage/ready";
+@import "./components/indexPage/craft";
+@import "./components/indexPage/collection-unique";
 
 // Components - Pages
 

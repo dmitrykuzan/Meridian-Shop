@@ -1,0 +1,23 @@
+.collection__unique {
+  &-title {
+    margin-bottom: 2rem;
+    line-height: 150%;
+    text-align: center;
+
+    @media (max-width: em(767)) {
+      line-height: 110%;
+    }
+  }
+
+  &-subtitle {
+    margin-bottom: 4rem;
+    font-weight: 400;
+    font-size: fluid-font(2.5rem, 1.8rem);
+    text-align: center;
+    color: var(--clr-text-980);
+
+    @media (max-width: em(767)) {
+      margin-bottom: 3rem;
+    }
+  }
+}

@@ -7,11 +7,12 @@ import "./_vendor";
 import { burger, mobileCheck, searchToggle, dynamicAdaptive } from "./functions/";
 
 // Components
-// import { formValidation } from "./components/";
+import { mainSlider } from "./components/";
 
 window.addEventListener("DOMContentLoaded", () => {
   mobileCheck();
   searchToggle();
   burger();
   dynamicAdaptive();
+  mainSlider();
 });

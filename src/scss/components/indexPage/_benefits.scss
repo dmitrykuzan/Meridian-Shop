@@ -8,22 +8,40 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: auto;
-    margin-left: auto;
     padding-top: 7.5rem;
     padding-right: 3rem;
     padding-bottom: 7.5rem;
     padding-left: 3rem;
+
+    @media (max-width: em(1200)) {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+
+    @media (max-width: em(767)) {
+      flex-direction: column;
+    }
   }
 
   &__item {
     position: relative;
     padding-top: 13rem;
+    padding-right: 2rem;
     padding-bottom: 4rem;
+    padding-left: 2rem;
     min-width: 33%;
 
     &:not(:last-child) {
       border-right: 0.1rem solid var(--clr-text-450);
+
+      @media (max-width: em(992)) {
+        border-right: initial;
+      }
+
+      @media (max-width: em(767)) {
+        margin-bottom: 3rem;
+        border-bottom: 0.1rem solid var(--clr-text-450);
+      }
     }
 
     &--1, &--2, &--3 {
@@ -44,6 +62,16 @@
         width: 10rem;
         height: 10rem;
         background-image: url(../img/benefits/benefits1.svg);
+
+        @media (max-width: em(1200)) {
+          width: 7rem;
+          height: 7rem;
+        }
+
+        @media (max-width: em(992)) {
+          width: 5rem;
+          height: 5rem;
+        }
       }
     }
 
@@ -52,6 +80,16 @@
         width: 11.5rem;
         height: 10rem;
         background-image: url(../img/benefits/benefits2.svg);
+
+        @media (max-width: em(1200)) {
+          width: 8rem;
+          height: 7rem;
+        }
+
+        @media (max-width: em(992)) {
+          width: 5.1rem;
+          height: 4.5rem;
+        }
       }
     }
 
@@ -60,7 +98,31 @@
         width: 10rem;
         height: 11.5rem;
         background-image: url(../img/benefits/benefits3.svg);
+
+        @media (max-width: em(1200)) {
+          width: 7rem;
+          height: 8rem;
+        }
+
+        @media (max-width: em(992)) {
+          width: 5.1rem;
+          height: 5.5rem;
+        }
       }
+    }
+
+    @media (max-width: em(1200)) {
+      padding-top: 10rem;
+    }
+
+    @media (max-width: em(992)) {
+      padding-top: 8rem;
+      padding-bottom: initial;
+    }
+
+    @media (max-width: em(767)) {
+      padding-bottom: 2rem;
+      min-width: 100%;
     }
   }
 
@@ -72,6 +134,11 @@
     text-align: center;
     text-transform: uppercase;
     color: var(--clr-default-100);
+
+    @media (max-width: em(992)) {
+      margin-bottom: 1.5rem;
+      font-size: 1.6rem;
+    }
   }
 
   &__subtitle {
@@ -79,5 +146,9 @@
     font-size: fluid-font(2.5rem, 1.8rem);
     text-align: center;
     color: var(--clr-default-100);
+
+    @media (max-width: em(992)) {
+      font-size: 1.6rem;
+    }
   }
 }

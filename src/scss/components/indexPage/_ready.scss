@@ -1,0 +1,157 @@
+.ready {
+
+  &__wrapper {
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+    text-align: center;
+
+    @media (max-width: em(767)) {
+      text-align: start;
+    }
+  }
+
+  &__description {
+    margin-right: auto;
+    margin-bottom: 8rem;
+    margin-left: auto;
+    max-width: 113rem;
+    font-size: fluid-font(2.5rem, 1.8rem);
+    text-align: center;
+    color: var(--clr-text-980);
+
+    @media (max-width: em(767)) {
+      margin-bottom: 5rem;
+      text-align: start;
+    }
+  }
+
+  &__slider-body {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: em(767)) {
+      width: calc(100% + 1.5rem);
+    }
+  }
+
+  &__slider {
+    max-width: 156rem;
+
+    //Firefox
+    scrollbar-color: var(--clr-text-600) var(--clr-text-350);
+    scrollbar-width: thin;
+
+    @media (max-width: em(1700)) {
+      margin-right: 2rem;
+      margin-left: 2rem;
+    }
+
+    @media (max-width: em(767)) {
+      overflow: auto;
+      margin-right: initial;
+      margin-left: initial;
+      padding-bottom: 5rem;
+      max-width: initial;
+    }
+
+    &::-webkit-scrollbar {
+      border-radius: 0.4rem  0  0 0.4rem;
+      height: 0.8rem;
+      background-color: var(--clr-text-350);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 0.4rem;
+      background-color: var(--clr-text-600);
+    }
+  }
+
+  &__slider-wrapper {
+    @media (max-width: em(767)) {
+      display: flex;
+    }
+  }
+
+  &__button {
+    position: relative;
+    z-index: 1;
+    height: max-content;
+
+    svg {
+      width: 2rem;
+      height: 4rem;
+      fill: var(--clr-text-800);
+    }
+
+    &.swiper-button-disabled {
+      svg {
+        opacity: 0.75;
+      }
+    }
+
+    &--next {
+      svg {
+        transform: rotate(-180deg);
+      }
+    }
+
+    @media (max-width: em(767)) {
+      display: none;
+    }
+  }
+
+  &__slide {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    justify-content: space-between;
+
+    @media (max-width: em(767)) {
+      &:not(:last-child) {
+        margin-right: 2.5rem;
+      }
+    }
+  }
+
+  &__slide-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    min-height: 27rem;
+  }
+
+  &__slide-name {
+    margin-bottom: 1rem;
+    font-family: 'Outfit';
+    font-weight: 400;
+    font-size: fluid-font(2.5rem, 1.8rem);
+  }
+
+  &__slide-price {
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    font-size: fluid-font(2.5rem, 1.8rem);
+    color: var(--clr-text-600);
+  }
+
+  &__slide-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    width: max-content;
+    min-width: 100%;
+    min-height: 7.5rem;
+    font-weight: 400;
+    font-size: fluid-font(2.5rem, 1.8rem);
+    line-height: 135%;
+    text-align: center;
+    color: var(--clr-default-100);
+    background-color: var(--clr-default-550);
+    transition: background-color var(--transition);
+  }
+}

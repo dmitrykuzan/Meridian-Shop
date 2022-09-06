@@ -153,5 +153,10 @@
     color: var(--clr-default-100);
     background-color: var(--clr-default-550);
     transition: background-color var(--transition);
+
+    &:hover {
+      background-color: #795340;
+      transition: background-color var(--transition);
+    }
   }
 }

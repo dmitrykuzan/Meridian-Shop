@@ -1,0 +1,140 @@
+.support {
+  background-image: -webkit-image-set(
+    url(../img/support/bg@2x.jpg) 2x,
+    url(../img/support/bg@1x.jpg) 1x
+  );
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 13rem;
+    padding-bottom: 13rem;
+
+    @media (max-width: em(992)) {
+      flex-direction: column;
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+
+    @media (max-width: em(575)) {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+  }
+
+  &__info {
+    margin-right: 2rem;
+    max-width: 79rem;
+
+    @media (max-width: em(992)) {
+      margin-right: initial;
+      margin-bottom: 3rem;
+      max-width: initial;
+    }
+
+    @media (max-width: em(575)) {
+      margin-bottom: initial;
+      max-width: 35rem;
+    }
+  }
+
+  &__title {
+    margin-bottom: 1rem;
+    color: var(--clr-default-100);
+
+    @media (max-width: em(992)) {
+      text-align: center;
+    }
+  }
+
+  &__text {
+    margin-bottom: 3.5rem;
+
+    p {
+      font-size: fluid-font(2.5rem, 1.8rem);
+      line-height: 144%;
+      color: var(--clr-text-150);
+
+      &:not(:last-child) {
+        margin-bottom: 1.5rem;
+      }
+
+      @media (max-width: em(992)) {
+        text-align: center;
+      }
+    }
+
+    @media (max-width: em(992)) {
+      margin-bottom: 2rem;
+    }
+
+    @media (max-width: em(575)) {
+      margin-bottom: initial;
+    }
+  }
+
+  &__email {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: fluid-font(2.5rem, 1.8rem);
+    color: var(--clr-default-100);
+
+    p {
+      margin-right: 1rem;
+    }
+
+    a {
+      color: var(--clr-default-100);
+    }
+
+    @media (max-width: em(992)) {
+      justify-content: center;
+    }
+
+    @media (max-width: em(575)) {
+      display: none;
+    }
+  }
+
+  &__number {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__number-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    width: max-content;
+    min-width: 28rem;
+    min-height: 8rem;
+    font-weight: 400;
+    font-size: fluid-font(2.5rem, 1.8rem);
+    line-height: 135%;
+    text-transform: uppercase;
+    color: var(--clr-text-primary-500);
+    background-color: var(--clr-default-100);
+    transition: background-color var(--transition);
+
+    svg {
+      margin-right: 1.5rem;
+      width: 3.1rem;
+      height: 3.1rem;
+    }
+  }
+
+  &__graph {
+    font-weight: 400;
+    font-size: fluid-font(2.5rem, 1.8rem);
+    color: var(--clr-default-100);
+  }
+}

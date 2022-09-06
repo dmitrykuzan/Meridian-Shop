@@ -7,7 +7,7 @@ import "./_vendor";
 import { burger, mobileCheck, searchToggle, dynamicAdaptive } from "./functions/";
 
 // Components
-import { mainSlider } from "./components/";
+import { mainSlider, aboutSlider } from "./components/";
 
 window.addEventListener("DOMContentLoaded", () => {
   mobileCheck();
@@ -15,4 +15,5 @@ window.addEventListener("DOMContentLoaded", () => {
   burger();
   dynamicAdaptive();
   mainSlider();
+  aboutSlider();
 });

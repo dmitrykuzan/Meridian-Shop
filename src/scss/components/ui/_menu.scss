@@ -38,8 +38,19 @@ $burgerMQ: em(1240);
       }
     }
 
-    &--aside {
+    &--search {
+      display: none;
+
       @media (max-width: em(1240)) {
+        display: block;
+      }
+    }
+
+    &--aside {
+      display: none;
+
+      @media (max-width: em(1240)) {
+        display: block;
         margin-top: 3rem;
       }
     }

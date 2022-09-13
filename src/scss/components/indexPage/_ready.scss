@@ -124,9 +124,12 @@
 
   &__slide-name {
     margin-bottom: 1rem;
-    font-family: 'Outfit';
-    font-weight: 400;
-    font-size: fluid-font(2.5rem, 1.8rem);
+    a {
+      font-family: 'Outfit';
+      font-weight: 400;
+      font-size: fluid-font(2.5rem, 1.8rem);
+      color: var(--clr-default-900);
+    }
   }
 
   &__slide-price {

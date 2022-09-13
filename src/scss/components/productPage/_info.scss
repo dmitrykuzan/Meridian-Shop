@@ -1,0 +1,16 @@
+.info {
+  &__title {
+    font-size: fluid-font(6.5rem, 1.8rem);
+  }
+
+  &__description {
+    max-width: 80rem;
+  }
+
+  &__text {
+    p {
+      line-height: 160%;
+      color: var(--clr-text-700);
+    }
+  }
+}

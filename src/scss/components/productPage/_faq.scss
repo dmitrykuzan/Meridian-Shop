@@ -1,0 +1,104 @@
+.faq {
+
+  &__wrapper {
+
+    &.active {
+
+      .faq__question {
+        &::after {
+          transform: translateY(-50%) rotate(90deg);
+          transition: transform var(--transition);
+        }
+      }
+
+      .faq__answer {
+        padding-bottom: 2rem;
+        transition: max-height var(--transition), padding-bottom var(--transition);
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 3rem;
+    font-size: fluid-font(5.5rem, 2.4rem);
+
+    @media (max-width: em(767)) {
+      text-align: center;
+    }
+  }
+
+  &__body {
+  }
+
+  &__question {
+    position: relative;
+    border-top: 0.1rem solid var(--clr-default-250);
+    padding-top: 4rem;
+    padding-right: 8rem;
+    padding-bottom: 4rem;
+    min-width: 100%;
+    font-size: fluid-font(2.5rem, 1.8rem);
+    line-height: 156%;
+    color: var(--clr-text-950);
+
+    &:before, &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      background-color: var(--clr-text-600);
+      transform: translateY(-50%);
+    }
+
+    &::before {
+      right: 4rem;
+      width: 3.5rem;
+      height: 0.3rem;
+
+      @media (max-width: em(767)) {
+        right: 2rem;
+        width: 3rem;
+      }
+    }
+
+    &::after {
+      right: 5.6rem;
+      width: 0.3rem;
+      height: 3.5rem;
+      transform: translateY(-50%) rotate(0);
+      transition: transform var(--transition);
+
+      @media (max-width: em(767)) {
+        right: 3.4rem;
+        height: 3rem;
+      }
+    }
+
+    @media (max-width: em(767)) {
+      padding-top: 3rem;
+      padding-right: 7rem;
+      padding-bottom: 3rem;
+      font-size: 2rem;
+    }
+
+    @media (max-width: em(375)) {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+  }
+
+  &__answer {
+    overflow: hidden;
+    max-height: 0;
+    box-sizing: content-box;
+    transition: max-height var(--transition), padding-bottom var(--transition);
+
+    p {
+      line-height: 164%;
+      color: var(--clr-text-600);
+
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

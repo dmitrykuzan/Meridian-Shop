@@ -1,3 +1,5 @@
 export * from "./formValidation";
 export * from "./mainSlider";
-export * from "./aboutSlider";
+export * from "./furnitureSlider";
+export * from "./popularSlider";
+export * from "./productSlider";

@@ -124,11 +124,24 @@
     color: var(--clr-text-primary-500);
     background-color: var(--clr-default-100);
     transition: background-color var(--transition);
+    transition: color var(--transition), background-color var(--transition);
 
     svg {
       margin-right: 1.5rem;
       width: 3.1rem;
       height: 3.1rem;
+      transition: fill var(--transition);
+    }
+
+    &:hover {
+      color: var(--clr-default-100);
+      background-color: var(--clr-default-900);
+      transition: color var(--transition), background-color var(--transition);
+
+      svg {
+        fill: var(--clr-default-100);
+        transition: fill var(--transition);
+      }
     }
   }
 

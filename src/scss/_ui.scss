@@ -25,6 +25,33 @@
   }
 }
 
+.breadcrumbs__list {
+  display: flex;
+
+  &-item {
+    position: relative;
+    font-size: fluid-font(1.8rem, 1.6rem);
+    text-transform: uppercase;
+
+    a {
+      color: var(--clr-default-250);
+    }
+
+    &:not(:last-child) {
+      margin-right: 2.5rem;
+
+      &::after {
+        content: '/';
+        position: absolute;
+        right: -1.5rem;
+        top: 0;
+        font-size: fluid-font(1.8rem, 1.6rem);
+        color: var(--clr-default-250);
+      }
+    }
+  }
+}
+
 .main__btn {
   display: flex;
   align-items: center;

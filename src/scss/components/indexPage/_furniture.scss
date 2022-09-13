@@ -1,4 +1,4 @@
-.about {
+.furniture {
   &__wrapper {
   }
 
@@ -136,7 +136,7 @@
       top: 0;
       width: 3.7rem;
       height: 3.5rem;
-      background-image: url(../img/about/star.svg);
+      background-image: url(../img/furniture/star.svg);
       background-size: cover;
       background-repeat: no-repeat;
 
@@ -207,6 +207,12 @@
     &--next {
       svg {
         transform: rotate(-180deg);
+      }
+    }
+
+    &.swiper-button-disabled {
+      svg {
+        opacity: 0.44;
       }
     }
   }

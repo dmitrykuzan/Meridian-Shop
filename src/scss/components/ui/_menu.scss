@@ -63,7 +63,7 @@ $burgerMQ: em(1240);
 
   @media (max-width: $burgerMQ) {
     position: fixed;
-    right: -100%;
+    left: -100%;
     top: 0;
     z-index: 10;
     display: flex;
@@ -72,11 +72,11 @@ $burgerMQ: em(1240);
     height: 100%;
     max-width: 32rem;
     background-color: var(--clr-default-900);
-    transition: right var(--transition);
+    transition: left var(--transition);
 
     &--active {
       left: 0;
-      transition: right var(--transition);
+      transition: left var(--transition);
     }
   }
 }

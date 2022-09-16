@@ -14,6 +14,10 @@
 
     .search__button {
       display: block;
+
+      @media (max-width: em(767)) {
+        right: -8rem;
+      }
     }
 
     .search__img {
@@ -42,6 +46,12 @@
     box-shadow: 0 0 3px 0 #000;
     text-indent: -500rem;
     transition: max-width var(--transition), padding-right var(--transition);
+
+    @media (max-width: em(767)) {
+      left: 50%;
+      right: initial;
+      transform: translateX(-50%);
+    }
   }
 
   &__button {
@@ -61,7 +71,7 @@
   }
 
   @media (max-width: em(767)) {
-    display: none;
+    // display: none;
   }
 }
 

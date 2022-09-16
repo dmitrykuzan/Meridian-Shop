@@ -8,7 +8,8 @@
       padding-right: 4rem;
       padding-left: 1rem;
       max-width: 20rem;
-      transition: max-width var(--transition);
+      text-indent: initial;
+      transition: max-width var(--transition) cubic-bezier(0,1.22,.66,1.39), padding-right var(--transition);
     }
 
     .search__button {
@@ -39,7 +40,8 @@
     min-height: 3.5rem;
     max-width: 0;
     box-shadow: 0 0 3px 0 #000;
-    transition: max-width var(--transition);
+    text-indent: -500rem;
+    transition: max-width var(--transition), padding-right var(--transition);
   }
 
   &__button {

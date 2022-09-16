@@ -11,6 +11,10 @@ import {
   dynamicAdaptive,
   accordion,
   tabs,
+  dropDown,
+  timer,
+  rangeSlider,
+  mobileFilter,
 } from "./functions/";
 
 // Components
@@ -32,4 +36,8 @@ window.addEventListener("DOMContentLoaded", () => {
   popularSlider();
   productSlider();
   tabs(".product__tabs", ".product__tabs-btn", ".product__tabs-info", "active");
+  dropDown(".collection__navbar", "collection__btn-dropdown", ".collection__navbar-dropdown", "active");
+  timer();
+  rangeSlider();
+  mobileFilter();
 });

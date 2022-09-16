@@ -1,0 +1,129 @@
+.counting {
+
+  .breadcrumbs__list {
+    margin-bottom: 4rem;
+
+    @media (max-width: em(575)) {
+      display: none;
+    }
+  }
+
+  &__wrapper {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background-image: -webkit-image-set(
+      url(../img/collection/counting/bg@2x.jpg) 2x,
+      url(../img/collection/counting/bg@1x.jpg) 1x
+    );
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media (max-width: em(1200)) {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+
+    @media (max-width: em(767)) {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+
+    @media (max-width: em(575)) {
+      margin-left: -1.5rem;
+      padding-right: 1.5rem;
+      padding-left: 1.5rem;
+      width: calc(100% + 3rem);
+    }
+  }
+
+  &__title {
+    margin-bottom: 4rem;
+    font-size: fluid-font(6.5rem, 2.4rem);
+    text-align: center;
+    color: var(--clr-default-100);
+
+    @media (max-width: em(767)) {
+      margin-bottom: 3rem;
+    }
+
+    @media (max-width: em(575)) {
+      margin-bottom: 1.5rem;
+    }
+
+    @media (max-width: em(375)) {
+      font-size: 2rem;
+    }
+  }
+
+  &__body {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+    font-size: fluid-font(6.5rem, 2.4rem);
+    color: var(--clr-default-100);
+
+    span {
+      display: block;
+      font-weight: 500;
+      font-size: fluid-font(7.5rem, 2.4rem);
+      color: var(--clr-default-100);
+
+      &:first-child {
+        margin-left: initial !important;
+      }
+
+      &:last-child {
+        margin-left: 1rem;
+
+        @media (max-width: em(767)) {
+          margin-left: 0.5rem;
+        }
+
+        @media (max-width: em(375)) {
+          margin-left: 0.3rem;
+        }
+      }
+
+      &:not(:last-child) {
+        margin-right: 1rem;
+        margin-left: 1rem;
+
+        @media (max-width: em(767)) {
+          margin-right: 0.5rem;
+          margin-left: 0.5rem;
+        }
+
+        @media (max-width: em(375)) {
+          margin-right: 0.3rem;
+          margin-left: 0.3rem;
+        }
+      }
+    }
+
+    @media (max-width: em(767)) {
+      margin-bottom: 3rem;
+    }
+
+    @media (max-width: em(575)) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: fluid-font(2.5rem, 1.8rem);
+    letter-spacing: 0.265em;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--clr-default-100);
+
+    @media (max-width: em(767)) {
+      margin-bottom: 3rem;
+    }
+
+    @media (max-width: em(575)) {
+      margin-bottom: 1.5rem;
+    }
+  }
+}

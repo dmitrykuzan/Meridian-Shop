@@ -32,6 +32,10 @@
     stroke: var(--clr-text-800);
     stroke-width: 0.2rem;
     cursor: pointer;
+
+    @media (max-width: em(767)) {
+      stroke: var(--clr-default-100);
+    }
   }
 
   &__input {

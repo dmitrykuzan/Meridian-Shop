@@ -1,0 +1,251 @@
+<section class="cart">
+  <div class="container">
+    <div class="cart__wrapper">
+      <div class="cart__shopping">
+        <div class="cart__shopping-top">
+          <h2 class="cart__shopping-title">Shopping Cart</h2>
+          <div class="cart__shopping-value">
+            <span class="cart__shopping-span">2</span> <p>Items</p>
+          </div>
+        </div>
+        <div class="cart__shopping-wrapper">
+          <div class="cart__shopping-name">
+            <p>Products</p>
+            <p>Quantity</p>
+            <p>Total</p>
+          </div>
+          <ul class="cart__shopping-list">
+            <li class="cart__shopping-item">
+              <div class="cart__shopping-info">
+                <div class="cart__shopping-image">
+                  <picture>
+                    <source
+                      srcset="
+                        img/cart/cart1@1x.avif 1x,
+                        img/cart/cart1@2x.avif 2x
+                      "
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="
+                        img/cart/cart1@1x.webp 1x,
+                        img/cart/cart1@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      src="img/cart/cart1@1x.jpg"
+                      srcset="img/cart/cart1@2x.jpg 2x"
+                      width="114"
+                      height="128"
+                      alt="Cart image"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+                <p class="cart__shopping-model">Serene Linen Deluxe Cloud</p>
+              </div>
+              
+              <div class="cart__shopping-counter">
+                <button class="cart__shopping-control" data-action="minus">-</button>
+                <div class="cart__shopping-current" data-counter>1</div>
+                <button class="cart__shopping-control" data-action="plus">+</button>
+              </div>
+
+              <div class="cart__shopping-total">
+                <span class="cart__span-value">25</span>
+              </div>
+
+              <button class="cart__shopping-delete"></button>
+            </li>
+            <li class="cart__shopping-item">
+              <div class="cart__shopping-info">
+                <div class="cart__shopping-image">
+                  <picture>
+                    <source
+                      srcset="
+                        img/cart/cart2@1x.avif 1x,
+                        img/cart/cart2@2x.avif 2x
+                      "
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="
+                        img/cart/cart2@1x.webp 1x,
+                        img/cart/cart2@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      src="img/cart/cart2@1x.jpg"
+                      srcset="img/cart/cart2@2x.jpg 2x"
+                      width="114"
+                      height="128"
+                      alt="Cart image"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+                <p class="cart__shopping-model">Serene Linen Deluxe Cloud</p>
+              </div>
+
+              <div class="cart__shopping-counter">
+                <button class="cart__shopping-control" data-action="minus">-</button>
+                <div class="cart__shopping-current" data-counter>1</div>
+                <button class="cart__shopping-control" data-action="plus">+</button>
+              </div>
+
+              <div class="cart__shopping-total">
+                <span class="cart__span-value">25</span>
+              </div>
+
+              <button class="cart__shopping-delete"></button>
+            </li>
+            <li class="cart__shopping-item">
+              <div class="cart__shopping-info">
+                <div class="cart__shopping-image">
+                  <picture>
+                    <source
+                      srcset="
+                        img/cart/cart2@1x.avif 1x,
+                        img/cart/cart2@2x.avif 2x
+                      "
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="
+                        img/cart/cart2@1x.webp 1x,
+                        img/cart/cart2@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      src="img/cart/cart2@1x.jpg"
+                      srcset="img/cart/cart2@2x.jpg 2x"
+                      width="114"
+                      height="128"
+                      alt="Cart image"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+                <p class="cart__shopping-model">Serene Linen Deluxe Cloud</p>
+              </div>
+
+              <div class="cart__shopping-counter">
+                <button class="cart__shopping-control" data-action="minus">-</button>
+                <div class="cart__shopping-current" data-counter>1</div>
+                <button class="cart__shopping-control" data-action="plus">+</button>
+              </div>
+
+              <div class="cart__shopping-total">
+                <span class="cart__span-value">25</span>
+              </div>
+
+              <button class="cart__shopping-delete"></button>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cart__summary">
+        <h2 class="cart__shopping-title cart__summary-title">Order Summary</h2>
+        <div class="cart__summary-wrapper">
+          <div class="cart__summary-subtotal">
+            <p class="cart__summary-subname">Subtotal</p>
+            <div class="cart__summary-vat">
+              <span class="cart__summary-price">£5,000.00</span>
+              <p class="cart__summary-info">(includes £416.67 20% VAT)</p>
+            </div>
+          </div>
+
+          <form class="cart__summary-form">
+            <div class="cart__summary-shipping">
+              <label class="cart__summary-label">
+                <input
+                  class="cart__summary-input"
+                  type="radio"
+                  name="shipping"
+                  checked
+                />
+                <span class="cart__summary-box"></span>
+                <span class="cart__summary-name">
+                  <p>Standard Free Shipping</p>
+                  <p>£00.00</p>
+                </span>
+              </label>
+            </div>
+
+            <div class="cart__summary-shipping">
+              <label class="cart__summary-label">
+                <input
+                  class="cart__summary-input"
+                  type="radio"
+                  name="shipping"
+                />
+                <span class="cart__summary-box"></span>
+                <span class="cart__summary-name">
+                  <p>Premium Shipping</p>
+                  <p>£118.80</p>
+                </span>
+              </label>
+            </div>
+          </form>
+
+          <div class="cart__summary-total">
+            <p>Total</p>
+            <span class="cart__summary-span">£5,000.00</span>
+          </div>
+
+          <button class="cart__summary-button main__btn">Proceed To Checkout</button>
+
+          <div class="cart__summary-payment product__payment">
+            <ul class="product__payment-list">
+              <li class="product__payment-item">
+                <img
+                  src="img/product/product/master-card.svg"
+                  width="70"
+                  height="70"
+                  alt="Master Card"
+                  loading="lazy"
+                />
+              </li>
+              <li class="product__payment-item">
+                <img
+                src="img/product/product/visa.svg"
+                width="70"
+                height="70"
+                alt="Master Card"
+                loading="lazy"
+              />
+              </li>
+              <li class="product__payment-item">
+                <img
+                  src="img/product/product/google-pay.svg"
+                  width="70"
+                  height="70"
+                  alt="Master Card"
+                  loading="lazy"
+                />
+              </li>
+              <li class="product__payment-item">
+                <img
+                src="img/product/product/apple-pay.svg"
+                width="70"
+                height="70"
+                alt="Master Card"
+                loading="lazy"
+              />
+                </picture>
+              </li>
+            </ul>
+          </div>
+
+          <div class="cart__summary-text">
+            <p>Discount prices will be active after entering the checkout process</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,4 +1,4 @@
-.cart {
+.basket {
   position: relative;
   min-width: 2.3rem;
   min-height: 2.3rem;
@@ -27,7 +27,7 @@
     color: var(--clr-default-100);
   }
 
-  &--active .cart__adding {
+  &--active .basket__adding {
     display: flex;
   }
 }

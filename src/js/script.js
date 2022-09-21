@@ -23,6 +23,7 @@ import {
   furnitureSlider,
   popularSlider,
   productSlider,
+  cart,
 } from "./components/";
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -40,4 +41,5 @@ window.addEventListener("DOMContentLoaded", () => {
   timer();
   rangeSlider();
   mobileFilter();
+  cart();
 });

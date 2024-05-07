@@ -1,5 +1,5 @@
-// import JustValidate from "just-validate";
-// import Inputmask from "inputmask";
+import JustValidate from "just-validate";
+import Inputmask from "inputmask";
 
 export const validateForms = (
   selector,
@@ -14,7 +14,7 @@ export const validateForms = (
   const telSelector = form?.querySelector('input[type="tel"]');
 
   if (!form) {
-    console.error("Нет такого селектора!");
+    // console.error("Нет такого селектора!");
     return false;
   }
 
@@ -24,7 +24,7 @@ export const validateForms = (
   }
 
   if (telSelector) {
-    const inputMask = new Inputmask("+7 (999) 999-99-99");
+    const inputMask = new Inputmask("+38 (999) 999-99-99");
     inputMask.mask(telSelector);
 
     for (let item of rules) {
@@ -41,6 +41,11 @@ export const validateForms = (
     }
   }
 
+  //================
+  const formBtn = form?.querySelector("button");
+
+  //========================================================
+
   const validation = new JustValidate(selector, options, translation);
 
   if (translation && locale) {
@@ -51,8 +56,11 @@ export const validateForms = (
     validation.addField(item.ruleSelector, item.rules);
   }
 
+  //==============
   validation.onSuccess(async (event) => {
-    let formData = new FormData(event.target);
+    const formData = new FormData(event.target);
+
+    formBtn.disabled = true;
 
     const response = await fetch("mail.php", {
       method: "POST",
@@ -60,18 +68,39 @@ export const validateForms = (
     });
 
     if (response.status !== 200) {
+      const errorMessage = form.querySelector(".form__status--error");
+
+      errorMessage.style.display = "block";
+
+      setTimeout(() => {
+        errorMessage.style.display = "";
+        formBtn.disabled = false;
+      }, 5000);
       console.error("Ошибка при отправке!");
-      onFailSend();
+      // onFailSend();
       return false;
+    } else {
+      const successMessage = form.querySelector(
+        ".form__status--success"
+      );
+
+      successMessage.style.display = "block";
+
+      setTimeout(() => {
+        successMessage.style.display = "";
+        formBtn.disabled = false;
+      }, 5000);
     }
 
     console.log("Отправлено");
-    onSuccessSend();
-
     event.target.reset();
   });
+
+//==============
 
   validation.onFail((fields) => {
     console.log("fields", fields);
   });
 };
+
+

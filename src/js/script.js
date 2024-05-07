@@ -24,6 +24,7 @@ import {
   popularSlider,
   productSlider,
   cart,
+  formValidation,
 } from "./components/";
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -42,4 +43,5 @@ window.addEventListener("DOMContentLoaded", () => {
   rangeSlider();
   mobileFilter();
   cart();
+  formValidation();
 });

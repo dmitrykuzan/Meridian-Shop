@@ -26,7 +26,7 @@
     justify-content: space-between;
     margin-bottom: 5rem;
 
-    @media (max-width: em(992)) {
+    @media (max-width: em(1200)) {
       flex-direction: column;
       margin-bottom: 3rem;
     }
@@ -37,13 +37,21 @@
   }
 
   &__input-wrapper {
+    min-width: 50rem;
+
     p {
       margin-bottom: 1.5rem;
       font-size: fluid-font(2.5rem, 1.8rem);
       color: var(--clr-text-960);
     }
 
-    @media (max-width: em(992)) {
+    @media (max-width: em(1600)) {
+      min-width: 35rem;
+    }
+
+    @media (max-width: em(1200)) {
+      min-width: 100%;
+
       &:not(:last-child) {
         margin-bottom: 3rem;
       }
@@ -53,6 +61,13 @@
       &:not(:last-child) {
         margin-bottom: 2rem;
       }
+    }
+
+    .just-validate-error-label {
+      margin-top: 1rem;
+      font-size: fluid-font(2rem, 1.6rem);
+      text-align: center;
+      color: var(--clr-text-primary-400) !important;
     }
   }
 
@@ -64,7 +79,7 @@
     border: 0.1rem solid var(--clr-border-500);
     border-radius: 1rem;
     padding-left: 3rem;
-    min-width: 70rem;
+    min-width: 100%;
     min-height: 8rem;
     font-size: fluid-font(2.5rem, 1.8rem);
 
@@ -73,13 +88,12 @@
       color: var(--clr-text-250);
     }
 
-    @media (max-width: em(1560)) {
-      min-width: 45rem;
+    @media (max-width: em(992)) {
+      min-height: 5rem;
     }
 
     @media (max-width: em(992)) {
-      min-width: 100% !important;
-      min-height: 5rem;
+      padding-left: 1.5rem;
     }
   }
 
@@ -98,10 +112,31 @@
       font-size: fluid-font(2.5rem, 1.8rem);
       color: var(--clr-text-250);
     }
+
+    @media (max-width: em(992)) {
+      padding-left: 1.5rem;
+    }
   }
 
   &__button {
     margin-right: auto;
     margin-left: auto;
+  }
+
+  &__status {
+    &--error, &--success {
+      display: none;
+      margin-bottom: 2rem;
+      font-size: fluid-font(2rem, 1.6rem);
+      text-align: center;
+    }
+
+    &--error {
+      color: var(--clr-text-primary-400) !important;
+    }
+
+    &--success {
+      color: var(--clr-colors-400) !important;
+    }
   }
 }

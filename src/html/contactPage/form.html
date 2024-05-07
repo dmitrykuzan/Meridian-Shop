@@ -10,12 +10,17 @@
         <div class="form__top">
           <div class="form__input-wrapper">
             <p>Name</p>
-            <input type="text" class="form__input" placeholder="Enter your name">
+            <input type="text" class="form__input form__input--name" placeholder="Enter your name">
+          </div>
+
+          <div class="form__input-wrapper">
+            <p>Phone</p>
+            <input type="tel" class="form__input form__input--tel" placeholder="Enter your phone">
           </div>
 
           <div class="form__input-wrapper">
             <p>Email</p>
-            <input type="email" class="form__input" placeholder="Enter your email">
+            <input type="email" class="form__input form__input--mail" placeholder="Enter your email">
           </div>
         </div>
 
@@ -23,6 +28,13 @@
           <p>Message</p>
         <textarea class="form__textarea" placeholder="Write your message"></textarea>
         </div>
+
+        <p class="form__status form__status--success">
+          Thanks for the application! Our manager will contact you soon!
+        </p>
+        <p class="form__status form__status--error">
+          Something went wrong! Try again once.
+        </p>
 
         <button class="form__button main__btn" type="submit">Send message</button>
       </form>

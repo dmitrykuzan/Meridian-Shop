@@ -1,4 +1,5 @@
 export const cart = () => {
+
   //Отображение кол-во товаров
   const itemsList = document.querySelector(".cart__shopping-list");
   const itemsValue = document.querySelector(".cart__shopping-span");
@@ -15,6 +16,7 @@ export const cart = () => {
 
   itemsLength();
   //Отображение кол-во товаров
+
 
   //Тотал Прайс
   function calcCartPrice() {
@@ -37,6 +39,7 @@ export const cart = () => {
       amoutVat.innerText = totalPrice * 1.2;
     });
   }
+
 
   calcCartPrice();
 
